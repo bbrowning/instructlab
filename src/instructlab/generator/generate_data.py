@@ -328,7 +328,7 @@ def get_instructions_from_model(
                 "Generated prompt exceeded the server's maximum context length. "
                 "If you see this warning many times during generation, lower "
                 "the length of your example question and answers or raise the "
-                "server's maximum context size."
+                "server's maximum context size using `max_ctx_size`."
             )
             return [], 0
         raise exc
