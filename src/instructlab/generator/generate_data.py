@@ -190,7 +190,8 @@ def post_process_gpt3_response(num_prompt_instructions, response, discarded_file
     instructions = []
     discarded = 0
     for inst in raw_instructions:
-        if not inst.strip():
+        inst = inst.strip()
+        if not inst:
             continue
 
         splitted_data = re.split(r"\*\*\s+(Instruction|Input|Output):?", inst)
