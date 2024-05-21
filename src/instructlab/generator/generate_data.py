@@ -95,14 +95,10 @@ Here are some examples to help you understand the type of questions that are ask
 """
 
 _WORD_DENYLIST = [
-    "image",
-    "images",
     "graph",
     "graphs",
     "picture",
     "pictures",
-    "file",
-    "files",
     "map",
     "maps",
     "draw",
